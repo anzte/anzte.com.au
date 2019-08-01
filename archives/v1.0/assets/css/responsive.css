@@ -1,0 +1,29 @@
+@media screen and (max-width:403px)
+{
+    
+    .slider .section-one-slider-text
+    {
+        display: none;
+    }
+    
+    .slider .section-one-slider-text, .slider .typed-cursor {
+        display: none;
+    }
+    
+    .slider a.call-to-action-btn1, a.call-to-action-btn2
+    {
+        display: block;
+        width: 100%;
+        
+    }
+}
+
+@media screen and (max-width:295px)
+{
+    
+    .whatwedo-wrap p
+    {
+        font-size: 13px;
+    }
+    
+}
