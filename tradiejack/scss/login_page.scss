@@ -35,19 +35,3 @@ html,body,container{
     font-size: 2em;
     color: $primary_color;
 }
-.login_button{
-    background-color: $primary_color;
-    border-color: $primary_color;
-    color: $white;
-    &:hover,
-    &:active,
-    &:focus{    
-        background-color: darken( $primary_color, 10%);
-        border-color: darken( $primary_color,10%);
-        color: $white;
-    }
-    &:focus{
-        box-shadow: 0 0px 0px 2px lighten( $primary_color,10%);;
-    }
-    
-}

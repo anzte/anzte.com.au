@@ -16,6 +16,54 @@
   background: #d16c34;
   background: linear-gradient(170deg, #d16c34 0%, #d16c34 68%, #d48255 68%, #d48255 100%); }
 
+.basic_button {
+  background-color: #d16c34;
+  border-color: #d16c34;
+  color: #fff; }
+  .basic_button:hover, .basic_button:active, .basic_button:focus {
+    background-color: #ab5627;
+    border-color: #ab5627;
+    color: #fff; }
+  .basic_button:focus {
+    box-shadow: 0 0px 0px 2px #da8a5e; }
+
+.basic_button.transparent {
+  background-color: transparent;
+  border-color: transparent;
+  color: #d16c34;
+  outline: none; }
+  .basic_button.transparent:hover, .basic_button.transparent:active, .basic_button.transparent:focus {
+    background-color: transparent;
+    border-color: transparent;
+    color: #ab5627; }
+  .basic_button.transparent:focus {
+    box-shadow: 0 0px 0px 2px #da8a5e;
+    box-shadow: none; }
+
+.secondary_button {
+  background-color: #3499d1;
+  border-color: #3499d1;
+  color: #fff; }
+  .secondary_button:hover, .secondary_button:active, .secondary_button:focus {
+    background-color: #277cab;
+    border-color: #277cab;
+    color: #fff; }
+  .secondary_button:focus {
+    box-shadow: 0 0px 0px 2px #5eaeda; }
+
+.color_basic {
+  color: #d16c34; }
+
+.sticky_bottom {
+  position: sticky;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1030; }
+
+.bg_trans {
+  background: transparent !important; }
+
 html, body, container {
   height: 100vh;
   overflow: auto;
