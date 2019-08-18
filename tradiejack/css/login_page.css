@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css?family=Pacifico&display=swap");
+.white_text {
+  border: 0;
+  border-radius: .25rem;
+  border-bottom: 1px solid #d16c34;
+  font-size: 12px;
+  transition: all 1s;
+  background: transparent; }
+
+.white_text:focus {
+  box-shadow: 0 1px 0 0 #d16c34;
+  border-bottom: 1px solid #d16c34;
+  background: #fff; }
+
+.navbar.bg-dark {
+  background: #d16c34;
+  background: linear-gradient(170deg, #d16c34 0%, #d16c34 68%, #d48255 68%, #d48255 100%); }
+
+html, body, container {
+  height: 100vh;
+  /* background: #36D1DC;  
+    background: -webkit-linear-gradient(to bottom, #5B86E5, #36D1DC); 
+    background: linear-gradient(to bottom, #5B86E5, #36D1DC); */
+  overflow: auto;
+  background: #f8f9fa;
+  background: -webkit-linear-gradient(to bottom, #f8f9fa, #f8f9fa);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #f8f9fa, #f8f9fa); }
+
+.login_card {
+  width: 350px;
+  margin-top: 8vh;
+  margin-bottom: auto;
+  /* background: #ffffff91; */
+  background: #f8f9fa;
+  padding: 10px;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+  border-radius: 5px; }
+
+.logo_img {
+  border-radius: 50%;
+  padding: 8px;
+  border: 2px solid #d16c34;
+  width: 5em;
+  height: 5em;
+  background: #fff; }
+
+.logo_text {
+  font-family: 'Pacifico', cursive;
+  font-size: 2em;
+  color: #d16c34; }
+
+.login_button {
+  background-color: #d16c34;
+  border-color: #d16c34;
+  color: #fff; }
+  .login_button:hover, .login_button:active, .login_button:focus {
+    background-color: #ab5627;
+    border-color: #ab5627;
+    color: #fff; }
+  .login_button:focus {
+    box-shadow: 0 0px 0px 2px #da8a5e; }

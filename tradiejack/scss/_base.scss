@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+
+$primary_color:#d16c34;
+$bg_color:#f8f9fa;
+$white:#fff;
+
+.white_text{
+    border: 0;
+    border-radius: .25rem;
+    border-bottom: 1px solid $primary_color;
+    font-size: 12px;
+    transition: all 1s;
+    background: transparent;
+}
+.white_text:focus{
+    box-shadow: 0 1px 0 0 $primary_color;
+    border-bottom: 1px solid $primary_color;
+    background: $white; 
+}
+.navbar.bg-dark{
+    background: rgb(209,108,52);
+background: linear-gradient(170deg, rgba(209,108,52,1) 0%, rgba(209,108,52,1) 68%, rgba(212,130,85,1) 68%, rgba(212,130,85,1) 100%);
+}
