@@ -1,16 +1,22 @@
 @import url("https://fonts.googleapis.com/css?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+body {
+  font-family: 'Poppins', sans-serif; }
+
 .white_text {
   border: 0;
-  border-radius: .25rem;
+  border-radius: 0.25rem;
   border-bottom: 1px solid #d16c34;
-  font-size: 12px;
+  font-size: 1rem;
   transition: all 1s;
-  background: transparent; }
+  background: transparent;
+  z-index: 1;
+  color: #333; }
 
 .white_text:focus {
   box-shadow: 0 1px 0 0 #d16c34;
   border-bottom: 1px solid #d16c34;
-  background: #fff; }
+  background: transparent; }
 
 .navbar.bg-dark {
   background: #d16c34;
@@ -63,6 +69,81 @@
 
 .bg_trans {
   background: transparent !important; }
+
+.placeholder_wrap {
+  position: relative; }
+  .placeholder_wrap label {
+    position: absolute;
+    top: 9px;
+    left: 0;
+    margin-left: 10px;
+    font-size: .85rem;
+    pointer-events: none;
+    transition: all .5s; }
+  .placeholder_wrap input {
+    z-index: 1; }
+  .placeholder_wrap input:focus ~ label,
+  .placeholder_wrap input:not(:placeholder-shown) ~ label {
+    top: -9px;
+    left: -5px;
+    transition: all .5s;
+    color: #d16c34;
+    font-size: .75rem; }
+
+/* *****************Media******************/
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+/* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+/* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .button_stick_to_bottom {
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: 0 !important;
+    bottom: 0; }
+    .button_stick_to_bottom button {
+      border-radius: 0; } }
+
+/* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+/* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+@media (min-width: 481px) and (max-width: 767px) {
+  .button_stick_to_bottom {
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: 0 !important;
+    bottom: 0; }
+    .button_stick_to_bottom button {
+      border-radius: 0; } }
+
+/* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+@media (min-width: 320px) and (max-width: 480px) {
+  .button_stick_to_bottom {
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: 0 !important;
+    bottom: 0; }
+    .button_stick_to_bottom button {
+      border-radius: 0; } }
 
 html, body, container {
   height: 100vh;
