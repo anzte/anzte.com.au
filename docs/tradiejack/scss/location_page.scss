@@ -1,0 +1,25 @@
+@import "base";
+
+html,body,container{    
+    height: 100vh;   
+    overflow: auto;
+    background: $bg_color;
+    background: -webkit-linear-gradient(to bottom, $bg_color, $bg_color);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, $bg_color, $bg_color);
+}
+
+.map_container{
+    .iframe{
+        width:100%;
+        height:100%;
+    }
+}
+.flex-grow {
+    flex: 1 0 auto;
+}
+.details_card{
+    position: absolute;   
+    bottom: 23px;   
+    left: 61px;
+    right: 60px;
+}

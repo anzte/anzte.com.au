@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tradie Jack</title>
+    <meta name="description" content="Tradie Jack">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/userdetails_page.css">
+    <link href="/tradiejack/fonts/fontawesome.5.10.1/css/all.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-dark  navbar-fixed-top">
+        <a class="navbar-brand" href="#">
+            <i class="fas fa-chevron-left"></i>
+        </a>
+        <div class="order-0">
+            <span class="navbar-brand mx-auto" href="#">Address</span>
+        </div>
+    </nav>
+    <div class="d-flex flex-column ">
+        <div class="container mt-3">
+            <form action="https://www.anzte.com.au/tradiejack/dashboard.html" class="mb-4">
+                <div class="form-row">
+                    <div class="form-group col-4 mt-4">
+                        
+                        <select class="form-control white_text">
+                            <option value="Mr."> Mr.</option>
+                            <option value="Mrs."> Mrs.</option>
+                            <option value="Miss"> Miss</option>
+                            <option value="Ms."> Ms.</option>
+                            <option value="Dr."> Dr.</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-8">
+                        <div class="placeholder_wrap mt-4">                                                  
+                            <input type="text" class="form-control white_text" placeholder=" ">
+                            <label>Name</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="placeholder_wrap mt-2">  
+                        <input type="text" class="form-control white_text" placeholder=" ">
+                        <label>Email address</label>
+                    </div>                   
+                </div>
+                <label>Address</label>
+
+                <div class="z-depth-1-half map_container mb-2" id="map_panel">
+                    <iframe class="iframe rounded"
+                        src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                        frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+
+                <div class="form-row mb-0">
+                    <div class="form-group col-10 mb-0"> 
+                        <div class="placeholder_wrap">                        
+                            <input type="text" class="form-control white_text" placeholder=" ">
+                            <label>Address</label>
+                        </div>
+                    </div>
+                    <div class="form-group col-2 mb-0 text-center">                       
+                        <a href="#" class="form-control basic_button transparent btn-sm" id="map_toggle" onclick="openMapPanel()"><i class="fas fa-map-marker"></i></a>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="placeholder_wrap mt-3">
+                        <input type="text" class="form-control white_text" placeholder=" ">
+                        <label>City, State</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="placeholder_wrap mt-2" >
+                        <input type="text" class="form-control white_text" placeholder=" ">
+                        <label>Country, Zip code</label>
+                    </div>
+                </div>
+                <div class="text-center mb-3 mt-4 button_stick_to_bottom">
+                    <button type="submit" class="btn basic_button btn-block btn-rounded "><i class="fas fa-arrow-circle-right"></i></button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
