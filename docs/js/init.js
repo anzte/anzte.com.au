@@ -349,9 +349,11 @@ function anzte_tm_contact_form(){
 	jQuery(".contact_form #send_message").on('click', function(){
 		
 		var name 		= jQuery(".contact_form #name").val();
+		// console.log(name);
 		var email 		= jQuery(".contact_form #email").val();
+		var phone 		= jQuery(".contact_form #phone").val();
 		var message 	= jQuery(".contact_form #message").val();
-		var subject 	= jQuery(".contact_form #subject").val();
+		// var subject 	= jQuery(".contact_form #subject").val();
 		var success     = jQuery(".contact_form .returnmessage").data('success');
 	
 		jQuery(".contact_form .returnmessage").empty(); //To empty previous error/success message.
@@ -362,9 +364,13 @@ function anzte_tm_contact_form(){
 		}
 		else{
 			// Returns successful data submission message when the entered information is stored in database.
-			jQuery.post("modal/contact.php",{ ajax_name: name, ajax_email: email, ajax_message:message, ajax_subject: subject}, function(data) {
-				
-				jQuery(".contact_form .returnmessage").append(data);//Append returned message to message paragraph
+			jQuery.post("https://docs.google.com/forms/u/2/d/e/1FAIpQLSevflysK3LOGwKbdcxCjoAw5LCt09783OCcNoWReFFTcsW1kQ/formResponse",{ "entry.1417372167": name, "entry.335447338": email,"entry.762804863":phone, "entry.1294583361":message});
+			
+			
+			
+			// , function() {
+				//console.log(data);
+				//jQuery(".contact_form .returnmessage").append(data);//Append returned message to message paragraph
 				
 				
 				if(jQuery(".contact_form .returnmessage span.contact_error").length){
@@ -374,11 +380,11 @@ function anzte_tm_contact_form(){
 					jQuery(".contact_form .returnmessage").slideDown(500).delay(4000).slideUp(500);
 				}
 				
-				if(data===""){
+				//if(data===""){
 					jQuery("#contact_form")[0].reset();//To reset form fields on success
-				}
+				//}
 				
-			});
+			//});
 		}
 		return false; 
 	});
