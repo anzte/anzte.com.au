@@ -349,7 +349,7 @@ function anzte_tm_contact_form(){
 	jQuery(".contact_form #send_message").on('click', function(){
 		
 		var name 		= jQuery(".contact_form #name").val();
-		// console.log(name);
+		console.log(name);
 		var email 		= jQuery(".contact_form #email").val();
 		var phone 		= jQuery(".contact_form #phone").val();
 		var message 	= jQuery(".contact_form #message").val();
@@ -364,7 +364,7 @@ function anzte_tm_contact_form(){
 		}
 		else{
 			// Returns successful data submission message when the entered information is stored in database.
-			jQuery.post("https://docs.google.com/forms/u/2/d/e/1FAIpQLSevflysK3LOGwKbdcxCjoAw5LCt09783OCcNoWReFFTcsW1kQ/formResponse",{ "entry.1417372167": name, "entry.335447338": email,"entry.762804863":phone, "entry.1294583361":message});
+			jQuery.post("https://docs.google.com/forms/u/0/d/e/1FAIpQLSeElMrC1-zSa15wjLQcPOzucor7R14AxUcuNmarEwUsgzRZSg/formResponse",{ "entry.2005620554": name, "entry.1045781291": email,"entry.1166974658":phone, "entry.839337160":message});
 			
 			
 			
